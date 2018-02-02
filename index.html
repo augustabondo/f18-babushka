@@ -5,55 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistro Babushka</title>
-    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link type="text/css" href="css.css" rel="stylesheet">
 
-    <style>
-            .templatemodtager {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            max-width: 1024px;
-            margin: 0 auto;
-            grid-gap: 10px;
-        }
-        
-        .kortbeskrivelse {
-            font-family: sans-serif;
-        }
-        
-        .navn {
-            font-family: sans-serif;
-        }
-        
-        img {
-            max-width: 100%;
-        }
-        
-        .menu {
-            border: 1px solid #666;
-            padding: 10px;
-        }
-        
-        .menu:nth-child(odd) {
-            background: #ccc;
-        }
-        
-        @media screen and (max-width:700px) {
-            .templatemodtager {
-                max-width: 100%;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media screen and (max-width:500px) {
-                .templatemodtager {
-                    max-width: 100%;
-                    grid-template-columns: repeat(1, 1fr);
-                }
-            }
-    </style>
+
 </head>
 
 <body>
     <header>
-        <img src="imgs/"></header>
+        <img src="imgs/">
+    </header>
+    <nav>
+        <button id="filter-alle">Alle</button>
+        <button id="filter-forretter">Forretter</button>
+        <button id="filter-hovedretter">Hovedretter</button>
+        <button id="filter-desserter">Desserter</button>
+        <button id="filter-drikkevarer">Drikkevarer</button>
+        <button id="filter-sideorders">Sideorders</button>
+    </nav>
+
+    <main>
+        <h1 id="overskrift" data-overskrift> Menu </h1>
+    </main>
 
     <div class="templatemodtager">
 
@@ -69,7 +41,9 @@
     </div>
 
 
-    <script src="js.json">
+    <script src="js.js">
+
+
     </script>
 </body>
 
