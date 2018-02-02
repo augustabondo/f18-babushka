@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Babushka</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+
+    <style>
+            .templatemodtager {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1024px;
+            margin: 0 auto;
+            grid-gap: 10px;
+        }
+        
+        .kortbeskrivelse {
+            font-family: sans-serif;
+        }
+        
+        .navn {
+            font-family: sans-serif;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .menu {
+            border: 1px solid #666;
+            padding: 10px;
+        }
+        
+        .menu:nth-child(odd) {
+            background: #ccc;
+        }
+        
+        @media screen and (max-width:700px) {
+            .templatemodtager {
+                max-width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width:500px) {
+                .templatemodtager {
+                    max-width: 100%;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imgs/"></header>
+
+    <div class="templatemodtager">
+
+        <template class="mytemplate">
+        <div class="menu">
+         <h1 class="navn"></h1>
+            <img class="billede" src= "" alt="">
+            <p class="pris"></p>
+            <p class="kortbeskrivelse"></p>
+          
+    </div>
+    </template>
+    </div>
+
+
+    <script src="js.json">
+    </script>
+</body>
+
+</html>
